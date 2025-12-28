@@ -21,11 +21,13 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        player.update(dt)
+
         background_color = "black"
         screen.fill(background_color)
 
         player.draw(screen)
-        
+
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000

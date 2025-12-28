@@ -19,7 +19,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
-        background_color = (255, 0, 0)
+        background_color = "black"
         screen.fill(background_color)
         pygame.display.flip()
 

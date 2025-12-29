@@ -50,7 +50,7 @@ def main():
                 if sh.collides_with(ast):
                     log_event("asteroid_shot")
                     sh.kill()
-                    ast.kill()
+                    ast.split()
 
         background_color = "black"
         screen.fill(background_color)
